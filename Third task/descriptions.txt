@@ -1,0 +1,10 @@
+c++
+python
+julia
+java
+matlab
+CUDA
+C#
+Assembler
+pascal
+javascript
