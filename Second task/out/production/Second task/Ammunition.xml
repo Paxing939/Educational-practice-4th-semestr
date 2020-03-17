@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<company>
+    <Helmet>
+        <manufacturer>Wehrmacht</manufacturer>
+        <price>25</price>
+        <weight>1.51</weight>
+        <radius>15</radius>
+    </Helmet>
+    <Jacket>
+        <manufacturer>Himel Bros</manufacturer>
+        <price>10</price>
+        <weight>0.51</weight>
+        <leatherPercentage>80</leatherPercentage>
+    </Jacket>
+</company>
