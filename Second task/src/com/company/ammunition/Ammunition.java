@@ -1,5 +1,6 @@
 package com.company.ammunition;
 
+
 import java.util.Objects;
 
 public abstract class Ammunition implements Comparable<Ammunition> {

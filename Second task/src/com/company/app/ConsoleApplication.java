@@ -19,21 +19,24 @@ public class ConsoleApplication {
     }
 
     public void start() throws IOException, SAXException, ParserConfigurationException {
-        motorcyclist.setAmmunitions(XMLParser.parseXMLFile("C:\\Users\\Lenovo\\IdeaProjects\\Second task\\src\\Ammunition.xml"));
-        boolean working = true;
+        motorcyclist.setAmmunitions(XMLParser.parseXMLFile("src/Ammunition.xml"));
         Scanner in = new Scanner(System.in);
-        String choice = null;
+        boolean working = true;
+        String choice = "start";
+
         while (working) {
-            System.out.println("Motorcyclist application");
-            System.out.println("Type option:");
-            System.out.println("helmet - to change helmet");
-            System.out.println("jacket - to change jacket");
-            System.out.println("print - to print motorcyclist ammunition");
-            System.out.println("price - to show price of all ammunition");
-            System.out.println("sort - to sort all ammunition by weight");
-            System.out.println("find - to find ammunition in required range");
-            System.out.println("any other string - to exit");
-            System.out.print("Enter option: ");
+            if (!choice.isEmpty()) {
+                System.out.println("Motorcyclist application");
+                System.out.println("Type option:");
+                System.out.println("helmet - to change helmet");
+                System.out.println("jacket - to change jacket");
+                System.out.println("print - to print motorcyclist ammunition");
+                System.out.println("price - to show price of all ammunition");
+                System.out.println("sort - to sort all ammunition by weight");
+                System.out.println("find - to find ammunition in required range");
+                System.out.println("exit - to exit");
+                System.out.print("Enter option: ");
+            }
             choice = in.nextLine();
 
             switch (choice) {
@@ -85,7 +88,10 @@ public class ConsoleApplication {
                     System.out.println("Enter two borders for price: ");
                     double firstPrice = in.nextDouble(), secondPrice = in.nextDouble();
                     if(firstPrice < 0 || secondPrice < 0) {
-                        throw new IllegalArgumentException("Price lower than 0 are unacceptable!");
+                        throw new IllegalArgumentException("Prices lower than 0 are unacceptable!");
+                    }
+                    if (secondPrice < firstPrice) {
+                        throw new IllegalArgumentException("First price can't be lower than second!");
                     }
                     var arrayOfRequiredAmmunition = motorcyclist.findInRange(firstPrice, secondPrice);
                     if (arrayOfRequiredAmmunition.isEmpty()) {
@@ -97,13 +103,15 @@ public class ConsoleApplication {
                     }
                     break;
                 }
-                case "":
-                    break;
-                default: {
+                case "exit": {
                     working = false;
+                    break;
+                }
+                default: {
+                    System.out.println("Incorrect option!");
                 }
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
