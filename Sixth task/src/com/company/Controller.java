@@ -147,7 +147,7 @@ class Controller extends AbstractCellEditor implements TableCellEditor {
         MyCell first;
         int second;
         boolean isMinus;
-        if (str.charAt(1) >= '1' && str.charAt(1) <= '9') {
+        if (str.charAt(1) >= '0' && str.charAt(1) <= '9') {
             String usualDate = str.substring(1, 11);
             if (isValidDate(usualDate)) {
                 first = parseFullDate(usualDate);
