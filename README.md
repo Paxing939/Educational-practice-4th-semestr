@@ -55,9 +55,8 @@ P.S. Excel supports editing and recounting cells. The task has more weight.
 
 ## Graphic arts
 
-#### Task 1. The program of work with the image. Need to upload a picture
-from the file and divide it into parts (for example, into equal rectangles, with using the PixelGrabber class). Then from these parts you need to assemble a whole a picture, for example, by the principle of "tag" or by dragging the mouse. You can offer your own version of the assembly. With successful assembly Pictures need to issue a message. Assembly sample must be available.
+#### Task 1. The program of work with the image.
+Need to upload a picture from the file and divide it into parts (for example, into equal rectangles, with using the PixelGrabber class). Then from these parts you need to assemble a whole a picture, for example, by the principle of "tag" or by dragging the mouse. You can offer your own version of the assembly. With successful assembly Pictures need to issue a message. Assembly sample must be available.
 
-#### Task 2. Mini Word Art. By changing the text and color, is formed
-voluminous text. Count volume colors using position light source (from at least two positions, for example, left and right or
-etc.) It is preferable to use existing solutions.
+#### Task 2. Mini Word Art.
+By changing the text and color, is formed voluminous text. Count volume colors using position light source (from at least two positions, for example, left and right or etc.) It is preferable to use existing solutions.
