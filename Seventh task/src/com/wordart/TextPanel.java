@@ -1,5 +1,7 @@
 package com.wordart;
 
+import com.barleybreak.BarleyBreak;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -21,20 +23,23 @@ public class TextPanel extends JPanel {
     public TextPanel() {
         super(new BorderLayout());
 
-        color = Color.GREEN;
+        color = Color.RED;
 
         text = new JTextField();
+        text.setColumns(30);
         shadowButton = new JButton("Change shadow");
         directionButton = new JButton("Change direction");
         colorButton = new JButton("Change color");
 
-        JPanel panel = new JPanel(new GridLayout(2, 3));
-        panel.add(new JLabel());
-        panel.add(new JLabel());
-        panel.add(text);
-        panel.add(shadowButton);
-        panel.add(directionButton);
-        panel.add(colorButton);
+        JPanel operationPanel = new JPanel(new BorderLayout());
+        JPanel textPanel = new JPanel(new BorderLayout());
+        textPanel.add(text, BorderLayout.CENTER);
+        JPanel buttonPanel = new JPanel(new GridLayout(1, 3));
+        buttonPanel.add(shadowButton);
+        buttonPanel.add(directionButton);
+        buttonPanel.add(colorButton);
+        operationPanel.add(textPanel, BorderLayout.NORTH);
+        operationPanel.add(buttonPanel, BorderLayout.SOUTH);
 
         initListeners();
 
@@ -43,8 +48,7 @@ public class TextPanel extends JPanel {
 
         add(northPanel, BorderLayout.NORTH);
         add(wordArtPanel, BorderLayout.CENTER);
-        add(panel, BorderLayout.SOUTH);
-
+        add(operationPanel, BorderLayout.SOUTH);
     }
 
     private void initListeners() {
