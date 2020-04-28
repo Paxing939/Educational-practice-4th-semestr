@@ -7,7 +7,6 @@ public class TextPanel extends JPanel {
 
     private static final int NUM_SHADOW = 4;
     private static final int NUM_DIRECTION = 4;
-    private static final int NUM_COLOR = 3;
 
     private final MiniWordArtPanel wordArtPanel;
     private final JTextField text;
@@ -17,10 +16,12 @@ public class TextPanel extends JPanel {
 
     private int shadow = 0;
     private int direction = 0;
-    private int color = 0;
+    private Color color;
 
     public TextPanel() {
         super(new BorderLayout());
+
+        color = Color.GREEN;
 
         text = new JTextField();
         shadowButton = new JButton("Change shadow");
@@ -52,7 +53,7 @@ public class TextPanel extends JPanel {
             repaint();
         });
         colorButton.addActionListener(e -> {
-            color = (color + 1) % NUM_COLOR;
+            color = JColorChooser.showDialog(null, "Choose a color", Color.RED);
             wordArtPanel.setColor(color);
             repaint();
         });

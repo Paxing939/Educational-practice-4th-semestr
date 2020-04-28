@@ -4,11 +4,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static com.barleybreak.BarleyBreak.*;
-
 public class CustomButtonListener implements ActionListener {
 
-    private BarleyBreak parent;
+    private final BarleyBreak parent;
 
     public CustomButtonListener(BarleyBreak parent) {
         this.parent = parent;
@@ -16,18 +14,18 @@ public class CustomButtonListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource().equals(newGameButton)) {
-            parent.fillArrays();
-            if (!parent.hasSolution(shuffledIndices) && BRICK_COLUMNS == 4 && BRICK_ROWS == 4) {
+        if (e.getSource().equals(BarleyBreak.getNewGameButton())) {
+            parent.initializeMatrices();
+            if (parent.hasNoSolution(BarleyBreak.getShuffledIndices()) && BarleyBreak.getBrickColumns() == 4 && BarleyBreak.getBrickRows() == 4) {
                 JOptionPane.showMessageDialog(parent, "Ha-Ha, Solution Does Not Exist, But You Can Try =)");
             }
-        } else if (e.getSource().equals(chooseImageButton)) {
+        } else if (e.getSource().equals(BarleyBreak.getChooseImageButton())) {
             JFileChooser fileChooser = new JFileChooser();
             int ret = fileChooser.showDialog(null, "Open File");
             if (ret == JFileChooser.APPROVE_OPTION) {
-                filepath = fileChooser.getSelectedFile().getPath();
-                parent.fillArrays();
-                if (!parent.hasSolution(shuffledIndices) && BRICK_COLUMNS == 4 && BRICK_ROWS == 4) {
+                BarleyBreak.setFilepath(fileChooser.getSelectedFile().getPath());
+                parent.initializeMatrices();
+                if (parent.hasNoSolution(BarleyBreak.getShuffledIndices()) && BarleyBreak.getBrickColumns() == 4 && BarleyBreak.getBrickRows() == 4) {
                     JOptionPane.showMessageDialog(parent, "Ha-Ha, Solution Does Not Exist, But You Can Try =)");
                 }
             }

@@ -7,13 +7,10 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import static com.barleybreak.BarleyBreak.panels;
-import static com.barleybreak.BarleyBreak.indices;
-
 public class CustomMouseListener extends MouseAdapter {
 
     private boolean isOutOfRange(int i, int j) {
-        return i >= 0 && j >= 0 && i < BarleyBreak.BRICK_ROWS && j < BarleyBreak.BRICK_COLUMNS;
+        return i >= 0 && j >= 0 && i < BarleyBreak.getBrickRows() && j < BarleyBreak.getBrickColumns();
     }
 
     private Point whereToMove(int i, int j) {
@@ -22,28 +19,28 @@ public class CustomMouseListener extends MouseAdapter {
         int indexRow = i - 1;
         int indexColumn = j;
         if (isOutOfRange(indexRow, indexColumn)) {
-            if (panels[indexRow][indexColumn].getImage() == null) {
+            if (BarleyBreak.getPanels()[indexRow][indexColumn].getImage() == null) {
                 point = new Point(indexRow, indexColumn);
             }
         }
         indexRow = i;
         indexColumn = j + 1;
         if (isOutOfRange(indexRow, indexColumn)) {
-            if (panels[indexRow][indexColumn].getImage() == null) {
+            if (BarleyBreak.getPanels()[indexRow][indexColumn].getImage() == null) {
                 point = new Point(indexRow, indexColumn);
             }
         }
         indexRow = i + 1;
         indexColumn = j;
         if (isOutOfRange(indexRow, indexColumn)) {
-            if (panels[indexRow][indexColumn].getImage() == null) {
+            if (BarleyBreak.getPanels()[indexRow][indexColumn].getImage() == null) {
                 point = new Point(indexRow, indexColumn);
             }
         }
         indexRow = i;
         indexColumn = j - 1;
         if (isOutOfRange(indexRow, indexColumn)) {
-            if (panels[indexRow][indexColumn].getImage() == null) {
+            if (BarleyBreak.getPanels()[indexRow][indexColumn].getImage() == null) {
                 point = new Point(indexRow, indexColumn);
             }
         }
@@ -56,9 +53,9 @@ public class CustomMouseListener extends MouseAdapter {
         int row = 0;
         int column = 0;
         boolean found = false;
-        for (int i = 0; i < BarleyBreak.BRICK_ROWS; i++) {
-            for (int j = 0; j < BarleyBreak.BRICK_COLUMNS; j++) {
-                if (panel.equals(panels[i][j])) {
+        for (int i = 0; i < BarleyBreak.getBrickRows(); i++) {
+            for (int j = 0; j < BarleyBreak.getBrickColumns(); j++) {
+                if (panel.equals(BarleyBreak.getPanels()[i][j])) {
                     row = i;
                     column = j;
                     found = true;
@@ -67,29 +64,29 @@ public class CustomMouseListener extends MouseAdapter {
             }
         }
         if (found) {
-            for (int i = 0; i < BarleyBreak.BRICK_ROWS; i++) {
-                for (int j = 0; j < BarleyBreak.BRICK_COLUMNS; j++) {
-                    System.out.println(indices[i][j]);
+            for (int i = 0; i < BarleyBreak.getBrickRows(); i++) {
+                for (int j = 0; j < BarleyBreak.getBrickColumns(); j++) {
+                    System.out.println(BarleyBreak.getIndices()[i][j]);
                 }
             }
             Point point = whereToMove(row, column);
             if (point != null) {
-                panels[point.x][point.y].setImage(panels[row][column].getImage());
-                panels[row][column].setImage(null);
-                panels[row][column].repaint();
-                panels[point.x][point.y].repaint();
+                BarleyBreak.getPanels()[point.x][point.y].setImage(BarleyBreak.getPanels()[row][column].getImage());
+                BarleyBreak.getPanels()[row][column].setImage(null);
+                BarleyBreak.getPanels()[row][column].repaint();
+                BarleyBreak.getPanels()[point.x][point.y].repaint();
 
                 int temp;
-                temp = indices[point.x][point.y];
-                indices[point.x][point.y] = indices[row][column];
-                indices[row][column] = temp;
+                temp = BarleyBreak.getIndices()[point.x][point.y];
+                BarleyBreak.getIndices()[point.x][point.y] = BarleyBreak.getIndices()[row][column];
+                BarleyBreak.getIndices()[row][column] = temp;
 
                 int k = 0;
                 boolean isOver = true;
 
-                for (int i = 0; i < BarleyBreak.BRICK_ROWS; i++) {
-                    for (int j = 0; j < BarleyBreak.BRICK_COLUMNS; j++) {
-                        if (indices[i][j] != k) {
+                for (int i = 0; i < BarleyBreak.getBrickRows(); i++) {
+                    for (int j = 0; j < BarleyBreak.getBrickColumns(); j++) {
+                        if (BarleyBreak.getIndices()[i][j] != k) {
                             isOver = false;
                             break;
                         }

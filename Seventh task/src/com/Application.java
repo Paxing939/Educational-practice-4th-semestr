@@ -1,4 +1,4 @@
-package com.specks;
+package com;
 
 import com.barleybreak.BarleyBreak;
 import com.wordart.TextPanel;
@@ -7,9 +7,16 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Application extends JFrame {
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 900;
-    public static final String CAPTION = "Barley - Break & Mini WordArt";
+    private static final int WIDTH = 800;
+    private static final int HEIGHT = 900;
+
+    public static int getWIDTH() {
+        return WIDTH;
+    }
+
+    public static int getHEIGHT() {
+        return HEIGHT;
+    }
 
     public void setScreenBounds() {
         Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -20,15 +27,14 @@ public class Application extends JFrame {
     }
 
     public Application() {
-        setTitle(CAPTION);
-        setScreenBounds();
+        setTitle("Barley - Break and Mini WordArt");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        setScreenBounds();
 
         JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("Barley-break", new BarleyBreak());
         tabbedPane.addTab("Mini WordArt", new TextPanel());
-
+        tabbedPane.addTab("Barley-break", new BarleyBreak());
         add(tabbedPane);
     }
 

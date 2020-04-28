@@ -3,7 +3,7 @@ package com.specks;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class ImageResizer {
+public class ImageResize {
     public static BufferedImage resize(BufferedImage iconToResize,int scaledWidth,int scaledHeight) {
         BufferedImage outputImage = new BufferedImage(scaledWidth,scaledHeight, iconToResize.getType());
         Graphics2D g2d = outputImage.createGraphics();

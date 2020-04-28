@@ -12,7 +12,7 @@ class MiniWordArtPanel extends JPanel {
 
     private int direction;
 
-    private int color;
+    private Color color;
 
     void setText(String text) {
         this.text = text;
@@ -26,11 +26,11 @@ class MiniWordArtPanel extends JPanel {
         this.direction = direction;
     }
 
-    void setColor(int color) {
+    void setColor(Color color) {
         this.color = color;
     }
 
-    MiniWordArtPanel(int shadow, String text, int color, int direction) {
+    MiniWordArtPanel(int shadow, String text, Color color, int direction) {
         super();
         this.shadow = shadow;
         this.text = text;
@@ -42,81 +42,88 @@ class MiniWordArtPanel extends JPanel {
     public void paintComponent(Graphics g) {
         Graphics2D graphics = (Graphics2D) g;
         String str = text + " ";
+        int symbolsPerString = 7;
+        int numberStrings = str.length() / symbolsPerString + 1;
+        int startX = -180, startY = -135;
 
-        if (str.length() < 20) {
-            TextLayout txt = new TextLayout(str,
-                    new Font("Bernard MT", Font.BOLD, getHeight() / (str.length() + 1)),
-                    graphics.getFontRenderContext());
-            AffineTransform transform = new AffineTransform();
-            Shape shape;
-            for (int i = 0; i < 50 / str.length(); ++i) {
-                translateShadow(transform, i);
-                shape = txt.getOutline(transform);
-                graphics.draw(shape);
-                graphics.fill(shape);
-            }
-            for (int i = 0; i < 75 / str.length(); ++i) {
-                translateColor(graphics, i, str);
-                translateDirection(transform, i);
+        for (int i = 0; i < numberStrings; ++i) {
 
-                shape = txt.getOutline(transform);
-                graphics.draw(shape);
-                graphics.fill(shape);
+            int endSymbol = (i + 1) * symbolsPerString;
+            if (endSymbol > str.length()) {
+                endSymbol = str.length();
             }
-        } else {
-            TextLayout txt = new TextLayout(str,
-                    new Font("Bernard MT", Font.BOLD, getHeight() / (str.length() + 1)),
-                    graphics.getFontRenderContext());
-            AffineTransform transform = new AffineTransform();
-            Shape shape;
-            for (int i = 0; i < 50 / str.length(); ++i) {
-                translateShadow(transform, i);
-                shape = txt.getOutline(transform);
-                graphics.draw(shape);
-                graphics.fill(shape);
+            String tmp = str.substring(i * symbolsPerString, endSymbol);
+            if (tmp.isEmpty()) {
+                tmp = " ";
             }
-            for (int i = 0; i < 75 / str.length(); ++i) {
-                translateColor(graphics, i, str);
-                translateDirection(transform, i);
+            var txt = new TextLayout(tmp, new Font("Bernard MT", Font.BOLD, 150), graphics.getFontRenderContext());
+            graphics.translate(startX, startY);
 
-                shape = txt.getOutline(transform);
+            var transform = new AffineTransform();
+            for (int j = 0; j < 50 / 6; ++j) {
+                translateShadow(transform, j);
+                Shape shape = txt.getOutline(transform);
                 graphics.draw(shape);
                 graphics.fill(shape);
             }
+            for (int j = 0; j < 75 / 6; ++j) {
+                translateColor(graphics, j);
+                translateDirection(transform, j);
+
+                Shape shape = txt.getOutline(transform);
+                graphics.draw(shape);
+                graphics.fill(shape);
+            }
+
+            startY = 150;
+            startX = 0;
         }
     }
 
     private void translateShadow(AffineTransform transform, int i) {
-        if (shadow == 0) {
-            transform.setToTranslation(200 - i, getWidth() / 3);
-        } else if (shadow == 1) {
-            transform.setToTranslation(200, getWidth() / 3 + i);
-        } else if (shadow == 2) {
-            transform.setToTranslation(200 + i, getWidth() / 3);
-        } else if (shadow == 3) {
-            transform.setToTranslation(200, getWidth() / 3 - i);
+        switch (shadow) {
+            case 0: {
+                transform.setToTranslation(200 - i, getWidth() / 3);
+                break;
+            }
+            case 1: {
+                transform.setToTranslation(200, getWidth() / 3 + i);
+                break;
+            }
+            case 2: {
+                transform.setToTranslation(200 + i, getWidth() / 3);
+                break;
+            }
+            case 3: {
+                transform.setToTranslation(200, getWidth() / 3 - i);
+                break;
+            }
         }
     }
 
-    private void translateColor(Graphics graphics, int i, String str) {
-        if (color == 0) {
-            graphics.setColor(new Color(0, 50 + i * 3 / 2 * str.length(), 0));
-        } else if (color == 1) {
-            graphics.setColor(new Color(0, 0, 50 + i * 3 / 2 * str.length()));
-        } else if (color == 2) {
-            graphics.setColor(new Color(50 + i * 3 / 2 * str.length(), 0, 0));
-        }
+    private void translateColor(Graphics graphics, int i) {
+        graphics.setColor(new Color(color.getRed() / 2 + 4 * i, color.getGreen() / 2 + 4 * i, color.getBlue() / 2 + 4 * i));
     }
 
     private void translateDirection(AffineTransform transform, int i) {
-        if (direction == 0) {
-            transform.setToTranslation(200 + i, getWidth() / 3 - i);
-        } else if (direction == 1) {
-            transform.setToTranslation(200 + i, getWidth() / 3 + i);
-        } else if (direction == 2) {
-            transform.setToTranslation(200 - i, getWidth() / 3 + i);
-        } else if (direction == 3) {
-            transform.setToTranslation(200 - i, getWidth() / 3 - i);
+        switch (direction) {
+            case 0: {
+                transform.setToTranslation(200 + i, getWidth() / 3 - i);
+                break;
+            }
+            case 1: {
+                transform.setToTranslation(200 + i, getWidth() / 3 + i);
+                break;
+            }
+            case 2: {
+                transform.setToTranslation(200 - i, getWidth() / 3 + i);
+                break;
+            }
+            case 3: {
+                transform.setToTranslation(200 - i, getWidth() / 3 - i);
+                break;
+            }
         }
     }
+
 }

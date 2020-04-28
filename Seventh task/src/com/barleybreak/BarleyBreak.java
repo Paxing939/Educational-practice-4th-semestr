@@ -1,37 +1,67 @@
 package com.barleybreak;
 
+import com.Application;
 import com.specks.GraphicalPanel;
-import com.specks.ImageResizer;
+import com.specks.ImageResize;
 import com.specks.Shuffler;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
 public class BarleyBreak extends JPanel {
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 900;
 
     private JPanel gamePanel;
     private GraphicalPanel fullImagePanel;
 
-    static String filepath = "src/star_wars_trooper.jpg";
+    private static String filepath = "src/lena.jpg";
 
-    static JButton newGameButton;
-    static JButton chooseImageButton;
-    static final int BRICK_ROWS = 3;
-    static final int BRICK_COLUMNS = 3;
+    private static JButton newGameButton;
+    private static JButton chooseImageButton;
+    private static final int BRICK_ROWS = 3;
+    private static final int BRICK_COLUMNS = 3;
 
-    static GraphicalPanel[][] panels;
+    private static GraphicalPanel[][] panels;
     private BufferedImage[][] images;
-    static int[] shuffledIndices;
-    static int[][] indices;
+    private static int[] shuffledIndices;
+    private static int[][] indices;
 
-    public boolean hasSolution(int[] array) {
+    public static void setFilepath(String filepath) {
+        BarleyBreak.filepath = filepath;
+    }
+
+    static JButton getNewGameButton() {
+        return newGameButton;
+    }
+
+    static JButton getChooseImageButton() {
+        return chooseImageButton;
+    }
+
+    static int getBrickRows() {
+        return BRICK_ROWS;
+    }
+
+    static int getBrickColumns() {
+        return BRICK_COLUMNS;
+    }
+
+    static GraphicalPanel[][] getPanels() {
+        return panels;
+    }
+
+    static int[] getShuffledIndices() {
+        return shuffledIndices;
+    }
+
+    static int[][] getIndices() {
+        return indices;
+    }
+
+    boolean hasNoSolution(int[] array) {
         int inversions = 0;
         int emptyIndex = BRICK_COLUMNS * BRICK_ROWS - 1;
         for (int i = 1; i < BRICK_ROWS * BRICK_COLUMNS; i++) {
@@ -39,31 +69,23 @@ public class BarleyBreak extends JPanel {
                 inversions++;
             }
         }
-        return (inversions + emptyIndex) % 2 == 0;
+        return (inversions + emptyIndex) % 2 != 0;
     }
 
-    public void setScreenBounds() {
-        Toolkit toolkit = Toolkit.getDefaultToolkit();
-        Dimension getScreenSize = toolkit.getScreenSize();
-        int x = getScreenSize.width / 2 - WIDTH / 2;
-        int y = getScreenSize.height / 2 - HEIGHT / 2;
-        setBounds(x, y, WIDTH, HEIGHT);
-    }
-
-    public void fillArrays() {
+    public void initializeMatrices() {
         gamePanel.removeAll();
         gamePanel.repaint();
+
         try {
             BufferedImage originalImage = ImageIO.read(new File(filepath));
 
-            int imageHeight = 200;
-            int imageWidth = 200;
+            int imageHeight = 200, imageWidth = 200;
             fullImagePanel.setPreferredSize(new Dimension(imageWidth, imageHeight));
-            gamePanel.setPreferredSize(new Dimension(WIDTH, HEIGHT - imageHeight));
-            BufferedImage fullImage = ImageResizer.resize(originalImage, imageWidth, imageHeight);
+            gamePanel.setPreferredSize(new Dimension(Application.getWIDTH(), Application.getHEIGHT() - imageHeight));
+            BufferedImage fullImage = ImageResize.resize(originalImage, imageWidth, imageHeight);
+            BufferedImage breakingImage = ImageResize.resize(originalImage, Application.getWIDTH(), Application.getHEIGHT() - imageHeight);
             fullImagePanel.setImage(fullImage);
             fullImagePanel.repaint();
-            BufferedImage breakingImage = ImageResizer.resize(originalImage, WIDTH, HEIGHT - imageHeight);
 
             for (int i = 0; i < BRICK_ROWS * BRICK_COLUMNS; i++) {
                 shuffledIndices[i] = i;
@@ -94,49 +116,36 @@ public class BarleyBreak extends JPanel {
             }
 
             CustomMouseListener mouseListener = new CustomMouseListener();
-
             for (int i = 0; i < BRICK_ROWS; i++) {
                 for (int j = 0; j < BRICK_COLUMNS; j++) {
                     panels[i][j].addMouseListener(mouseListener);
                 }
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Image Not Found");
+            JOptionPane.showMessageDialog(null, "Image not found!");
         }
 
     }
 
     public BarleyBreak() {
-        setScreenBounds();
-
-        JPanel northPanel = new JPanel();
+        JPanel infoPanel = new JPanel();
+        JPanel buttonPanel = new JPanel();
         gamePanel = new JPanel();
         gamePanel.setLayout(new GridLayout(BRICK_ROWS, BRICK_COLUMNS));
-        JPanel buttonPanel = new JPanel();
         fullImagePanel = new GraphicalPanel();
-        String textButtonText = "<---You Can Get This Image";
-        JButton textButton = new JButton(textButtonText);
-        textButton.setEnabled(false);
-        textButton.setFont(new Font("Bernard MT", Font.BOLD, 20));
-
-        String newGameButtonText = "New Game";
-        newGameButton = new JButton(newGameButtonText);
-        String chooseImageButtonText = "Choose Image";
-        chooseImageButton = new JButton(chooseImageButtonText);
-
         buttonPanel.setLayout(new BorderLayout());
-        northPanel.setLayout(new BorderLayout());
+        infoPanel.setLayout(new BorderLayout());
 
+        newGameButton = new JButton("New Game");
+        chooseImageButton = new JButton("Choose Image");
+        CustomButtonListener buttonListener = new CustomButtonListener(this);
+        newGameButton.addActionListener(buttonListener);
+        chooseImageButton.addActionListener(buttonListener);
 
-        add(northPanel, BorderLayout.NORTH);
-        Border northPanelBorder = BorderFactory.createLineBorder(Color.BLACK, 5);
-        northPanel.setBorder(northPanelBorder);
-
-        northPanel.add(fullImagePanel, BorderLayout.WEST);
-        northPanel.add(buttonPanel, BorderLayout.CENTER);
         buttonPanel.add(newGameButton, BorderLayout.NORTH);
         buttonPanel.add(chooseImageButton, BorderLayout.SOUTH);
-        buttonPanel.add(textButton, BorderLayout.CENTER);
+        infoPanel.add(fullImagePanel, BorderLayout.WEST);
+        infoPanel.add(buttonPanel, BorderLayout.EAST);
 
         panels = new GraphicalPanel[BRICK_ROWS][BRICK_COLUMNS];
         images = new BufferedImage[BRICK_ROWS][BRICK_COLUMNS];
@@ -148,11 +157,9 @@ public class BarleyBreak extends JPanel {
             }
         }
 
-        fillArrays();
-        add(gamePanel, BorderLayout.CENTER);
-        CustomButtonListener buttonListener = new CustomButtonListener(this);
-        newGameButton.addActionListener(buttonListener);
-        chooseImageButton.addActionListener(buttonListener);
-    }
+        initializeMatrices();
 
+        add(infoPanel, BorderLayout.NORTH);
+        add(gamePanel, BorderLayout.CENTER);
+    }
 }
