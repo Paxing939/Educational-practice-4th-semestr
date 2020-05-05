@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.arkanoid.logic.DialogPanel</OriginalElement>
+  <nodes>
+    <node x="677.0" y="804.0">com.arkanoid.objects.Ball</node>
+    <node x="0.0" y="584.0">com.arkanoid.logic.Gameplay</node>
+    <node x="299.7894736842105" y="0.0">java.awt.image.ImageObserver</node>
+    <node x="235.0" y="804.0">com.arkanoid.logic.TimerListener</node>
+    <node x="270.75" y="311.0">javax.accessibility.Accessible</node>
+    <node x="0.0" y="804.0">com.arkanoid.logic.MotionListener</node>
+    <node x="314.2894736842105" y="102.0">java.awt.Component</node>
+    <node x="0.0" y="903.0">com.arkanoid.logic.PlayerInfo</node>
+    <node x="96.33333333333331" y="0.0">java.io.Serializable</node>
+    <node x="132.78947368421052" y="414.0">javax.swing.JPanel</node>
+    <node x="210.99999999999997" y="584.0">com.arkanoid.logic.DialogPanel</node>
+    <node x="468.0" y="804.0">com.arkanoid.logic.BallMover</node>
+    <node x="555.0" y="683.0">com.arkanoid.logic.ButtonListener</node>
+    <node x="455.7894736842105" y="207.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
+    <node x="312.0" y="683.0">com.arkanoid.objects.Block</node>
+    <node x="794.0" y="683.0">com.arkanoid.logic.PlatformMover</node>
+    <node x="315.7894736842105" y="206.0">java.awt.Container</node>
+    <node x="119.28947368421052" y="310.0">javax.swing.JComponent</node>
+    <node x="496.6052631578947" y="447.0">com.arkanoid.logic.Application</node>
+    <node x="0.0" y="683.0">com.arkanoid.objects.Platform</node>
+    <node x="568.2894736842105" y="0.0">java.awt.MenuContainer</node>
+    <node x="826.0" y="804.0">com.arkanoid.logic.SoundPlayer</node>
+    <node x="173.0" y="903.0">com.arkanoid.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="javax.swing.JComponent" target="java.awt.Container">
+      <point x="0.0" y="-27.0" />
+      <point x="183.28947368421052" y="280.0" />
+      <point x="345.7894736842105" y="280.0" />
+      <point x="-30.0" y="27.0" />
+    </edge>
+    <edge source="com.arkanoid.logic.Application" target="java.awt.MenuContainer">
+      <point x="51.0" y="-27.0" />
+      <point x="615.6052631578947" y="394.0" />
+      <point x="682.2894736842105" y="394.0" />
+      <point x="38.00000000000003" y="26.0" />
+    </edge>
+    <edge source="javax.swing.JPanel" target="javax.accessibility.Accessible">
+      <point x="55.5" y="-60.0" />
+      <point x="299.2894736842105" y="394.0" />
+      <point x="302.75" y="394.0" />
+      <point x="-32.0" y="26.0" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="java.awt.Component" target="java.io.Serializable">
+      <point x="-41.0" y="-27.0" />
+      <point x="334.7894736842105" y="77.0" />
+      <point x="204.33333333333331" y="77.0" />
+      <point x="36.0" y="26.0" />
+    </edge>
+    <edge source="javax.swing.JPanel" target="javax.swing.JComponent">
+      <point x="-55.5" y="-60.0" />
+      <point x="188.28947368421052" y="394.0" />
+      <point x="183.28947368421052" y="394.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.arkanoid.logic.Application" target="javax.swing.TransferHandler.HasGetTransferHandler">
+      <point x="17.0" y="-27.0" />
+      <point x="581.6052631578947" y="384.0" />
+      <point x="617.7894736842105" y="384.0" />
+      <point x="54.0" y="26.0" />
+    </edge>
+    <edge source="com.arkanoid.logic.DialogPanel" target="javax.swing.JPanel">
+      <point x="0.0" y="-27.0" />
+      <point x="370.5" y="559.0" />
+      <point x="299.2894736842105" y="559.0" />
+      <point x="55.5" y="60.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.TransferHandler.HasGetTransferHandler">
+      <point x="42.666666666666686" y="-27.0" />
+      <point x="225.9561403508772" y="290.0" />
+      <point x="509.7894736842105" y="290.0" />
+      <point x="-54.0" y="26.0" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.MenuContainer">
+      <point x="41.0" y="-27.0" />
+      <point x="416.7894736842105" y="77.0" />
+      <point x="606.2894736842105" y="77.0" />
+      <point x="-38.0" y="26.0" />
+    </edge>
+    <edge source="com.arkanoid.logic.Gameplay" target="javax.swing.JPanel">
+      <point x="0.0" y="-27.0" />
+      <point x="95.5" y="559.0" />
+      <point x="188.28947368421052" y="559.0" />
+      <point x="-55.5" y="60.0" />
+    </edge>
+    <edge source="com.arkanoid.logic.Application" target="java.awt.Container">
+      <point x="-17.0" y="-27.0" />
+      <point x="547.6052631578947" y="384.0" />
+      <point x="409.25" y="384.0" />
+      <point x="409.25" y="280.0" />
+      <point x="405.7894736842105" y="280.0" />
+      <point x="30.0" y="27.0" />
+    </edge>
+    <edge source="com.arkanoid.logic.Application" target="javax.accessibility.Accessible">
+      <point x="-51.0" y="-27.0" />
+      <point x="513.6052631578947" y="394.0" />
+      <point x="366.75" y="394.0" />
+      <point x="32.0" y="26.0" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Component">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.io.Serializable">
+      <point x="-42.66666666666663" y="-27.0" />
+      <point x="140.6228070175439" y="290.0" />
+      <point x="132.33333333333331" y="290.0" />
+      <point x="-36.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="833.6666666666667" y="527.2222222222222" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
