@@ -20,7 +20,7 @@ public class Application extends JFrame {
     private final JButton middle;
     private final JButton professional;
     private final JButton psycho;
-    private SoundPlayer soundPlayer;
+    private final SoundPlayer soundPlayer;
     private final Gameplay gameplay;
 
     Image getImage() {
@@ -35,32 +35,36 @@ public class Application extends JFrame {
         return fontSize;
     }
 
-    public JMenuItem getMenuItem() {
+    JMenuItem getMenuItem() {
         return menuItem;
     }
 
-    public JDialog getDifficultyDialog() {
+    JDialog getDifficultyDialog() {
         return difficultyDialog;
     }
 
-    public JButton getAmateur() {
+    JButton getAmateur() {
         return amateur;
     }
 
-    public JButton getMiddle() {
+    JButton getMiddle() {
         return middle;
     }
 
-    public JButton getProfessional() {
+    JButton getProfessional() {
         return professional;
     }
 
-    public JButton getPsycho() {
+    JButton getPsycho() {
         return psycho;
     }
 
-    public Gameplay getGameplay() {
+    Gameplay getGameplay() {
         return gameplay;
+    }
+
+    SoundPlayer getSoundPlayer() {
+        return soundPlayer;
     }
 
     public void centralizeWindow(int width, int height) {
@@ -83,7 +87,7 @@ public class Application extends JFrame {
         timer.start();
 
         JPanel panelsPanel = new JPanel();
-//        soundPlayer = new SoundPlayer();
+        soundPlayer = new SoundPlayer();
         image = ImageIO.read(new File("src/com/arkanoid/images/arcanoid.jpg"));
         panelFont = new Font("Bubble Pixel-7 Dark", Font.BOLD, fontSize);
 

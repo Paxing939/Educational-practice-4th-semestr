@@ -17,7 +17,7 @@ class ButtonListener implements ActionListener {
             application.getDifficultyDialog().setVisible(true);
         } else {
             int level = 0;
-//                soundPlayer.playSound(SoundPlayer.NAVIGATION_SOUND);
+            application.getSoundPlayer().playSound(SoundPlayer.NAVIGATION_SOUND);
             if (e.getSource().equals(application.getAmateur())) {
                 level = 0;
             } else if (e.getSource().equals(application.getMiddle())) {

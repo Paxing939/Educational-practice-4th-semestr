@@ -23,13 +23,13 @@ class BallMover implements ActionListener {
 
             if (new Rectangle(0, 0, gameplay.getBORDER_SIZE(), gameplay.getRanges().height).intersects(ballRect)) {
                 gameplay.setDeltaX(-gameplay.getDeltaX());
-//                    soundPlayer.playSound(SoundPlayer.WALL_HIT_SOUND);
+                gameplay.getSoundPlayer().playSound(SoundPlayer.WALL_HIT_SOUND);
             } else if (new Rectangle(0, 0, gameplay.getRanges().width, gameplay.getBORDER_SIZE()).intersects(ballRect)) {
                 gameplay.setDeltaY(-gameplay.getDeltaY());
-//                    soundPlayer.playSound(SoundPlayer.WALL_HIT_SOUND);
+                gameplay.getSoundPlayer().playSound(SoundPlayer.WALL_HIT_SOUND);
             } else if (new Rectangle(gameplay.getRanges().width - gameplay.getBORDER_SIZE(), 0, gameplay.getBORDER_SIZE(), gameplay.getRanges().height).intersects(ballRect)) {
                 gameplay.setDeltaX(-gameplay.getDeltaX());
-//                    soundPlayer.playSound(SoundPlayer.WALL_HIT_SOUND);
+                gameplay.getSoundPlayer().playSound(SoundPlayer.WALL_HIT_SOUND);
             } else if (new Rectangle(0, gameplay.getBounds().height - gameplay.getBORDER_SIZE(), gameplay.getRanges().width, gameplay.getBORDER_SIZE()).intersects(ballRect)) {
                 gameplay.setGameStarted(false);
                 gameplay.setLeftPressed(false);
@@ -39,11 +39,11 @@ class BallMover implements ActionListener {
                 if (gameplay.getHitPoints() != 0) {
                     gameplay.setHitPoints(gameplay.getHitPoints() - 1);
                     gameplay.getHitPointImages().set(gameplay.getHitPoints(), gameplay.getHitPointEmptyImage());
-//                        soundPlayer.playSound(SoundPlayer.MINUS_LIFE_SOUND);
+                    gameplay.getSoundPlayer().playSound(SoundPlayer.MINUS_LIFE_SOUND);
                 }
 
                 if (gameplay.getHitPoints() == 0) {
-//                        soundPlayer.playSound(SoundPlayer.LOSE_SOUND);
+                    gameplay.getSoundPlayer().playSound(SoundPlayer.LOSE_SOUND);
                     JOptionPane.showMessageDialog(null, "GAME OVER!");
                     Gameplay.setGameOver(true);
                     gameplay.setVisible(false);
@@ -53,7 +53,7 @@ class BallMover implements ActionListener {
                     (int) gameplay.getPlatform().getCenter().getY() - gameplay.getPLATFORM_HEIGHT() / 2,
                     gameplay.getPLATFORM_WIDTH(), gameplay.getPLATFORM_HEIGHT()).intersects(ballRect) && gameplay.getDeltaY() < 0) {
                 gameplay.setDeltaY(-gameplay.getDeltaY());
-//                    soundPlayer.playSound(SoundPlayer.PLATFORM_HIT_SOUND);
+                gameplay.getSoundPlayer().playSound(SoundPlayer.PLATFORM_HIT_SOUND);
             } else {
                 for (int i = 0; i < gameplay.getROWS() * gameplay.getCOLUMNS(); i++) {
                     int x = (int) gameplay.getBlockList().get(i).getCenter().getX() - gameplay.getBlockWidth() / 2;
@@ -61,12 +61,11 @@ class BallMover implements ActionListener {
                     Rectangle rectangle = new Rectangle(x, y, gameplay.getBlockWidth(), gameplay.getBlockHeight());
                     if (rectangle.intersects(ballRect) && gameplay.getBlockList().get(i).isBlockEnabled()) {
                         gameplay.setDeltaY(-gameplay.getDeltaY());
-//                        gameplay.deltaY = -gameplay.deltaY;
                         gameplay.getBlockList().get(i).setEnabled(false);
-//                            soundPlayer.playSound(SoundPlayer.BRICK_HIT_SOUND);
+                        gameplay.getSoundPlayer().playSound(SoundPlayer.BRICK_HIT_SOUND);
                         gameplay.setActiveBlocks(gameplay.getActiveBlocks() - 1);
                         if (gameplay.getActiveBlocks() == 0) {
-//                                soundPlayer.playSound(SoundPlayer.WIN_SOUND);
+                            gameplay.getSoundPlayer().playSound(SoundPlayer.WIN_SOUND);
                             JOptionPane.showMessageDialog(null, "Here is the Winner!!!");
                             Gameplay.setGameOver(true);
                             gameplay.setVisible(false);

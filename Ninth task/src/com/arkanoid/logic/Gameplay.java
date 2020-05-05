@@ -183,9 +183,9 @@ public class Gameplay extends JPanel {
                             BORDER_SIZE + BLOCKS_GAP * (i + 1) + blockHeight * i + blockHeight / 2);
                     Block block;
                     if (i * COLUMNS + j < BRICKS_AMOUNT) {
-                        block = new Block(color, point, blockWidth, blockHeight, true);
+                        block = new Block(color, point, true);
                     } else {
-                        block = new Block(color, point, blockWidth, blockHeight, false);
+                        block = new Block(color, point, false);
                     }
                     blockList.add(block);
                 }
@@ -231,6 +231,10 @@ public class Gameplay extends JPanel {
         }
         g.setFont(font);
         g.setColor(Color.cyan);
+    }
+
+    SoundPlayer getSoundPlayer() {
+        return soundPlayer;
     }
 
     int getPLATFORM_WIDTH() {

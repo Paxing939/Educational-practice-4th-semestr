@@ -45,7 +45,6 @@ class PlatformMover extends KeyAdapter {
 
         } else if (e.getKeyCode() == KeyEvent.VK_ENTER || e.getKeyCode() == KeyEvent.VK_SPACE) {
                 gameplay.setGameStarted(true);
-//                gameplay.setEnterPressed(true);
         }
     }
 
