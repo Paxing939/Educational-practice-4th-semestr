@@ -1,6 +1,6 @@
 package com.company;
 
-public class Sweet {
+public class Block {
     private int val;
     private String category;
 

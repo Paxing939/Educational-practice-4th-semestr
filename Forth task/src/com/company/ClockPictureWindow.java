@@ -3,20 +3,22 @@ package com.company;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class ClockPictureWindow extends JPanel {
-    private JSlider slider;
+    private final JSlider slider;
     private int direction = 1;
 
-    ClockPictureWindow() {
+    ClockPictureWindow() throws IOException {
         super();
         setLayout(new BorderLayout());
 
         String[] items = {"По часовой", "Против часовой"};
         JComboBox comboBox = new JComboBox(items);
         comboBox.addActionListener(e -> {
-            String item = comboBox.getSelectedItem().toString();
+            String item = Objects.requireNonNull(comboBox.getSelectedItem()).toString();
             if ("По часовой".equals(item)) {
                 direction = 1;
             } else {
@@ -33,12 +35,13 @@ public class ClockPictureWindow extends JPanel {
         JButton openImage = new JButton("open...");
 
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(450, 50));
+        panel.setPreferredSize(new Dimension(500, 50));
         panel.add(slider);
         panel.add(comboBox);
         panel.add(openImage);
 
         ClockPicturePanel clockPicturePanel = new ClockPicturePanel(this);
+        clockPicturePanel.setImage(ImageIO.read(new File("src/Australia_16.png")));
         openImage.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
             int ret = fileChooser.showDialog(null, "Открыть файл");

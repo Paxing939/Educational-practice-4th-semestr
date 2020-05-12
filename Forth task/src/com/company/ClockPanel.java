@@ -2,19 +2,18 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ClockPanel extends JPanel {
-    private int width, height;
+    private final int width;
+    private final int height;
     private int tick;
     private int angle;
 
     ClockPanel() {
         tick = 0;
         angle = 0;
-        width = 450;
-        height = 450;
+        width = 500;
+        height = 500;
 
         Timer timer = new Timer(10, evt -> {
             repaint();

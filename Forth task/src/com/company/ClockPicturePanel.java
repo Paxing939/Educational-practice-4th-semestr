@@ -16,8 +16,8 @@ public class ClockPicturePanel extends JPanel {
         super();
         tick = 0;
         angle = 0;
-        width = 400;
-        height = 400;
+        width = 500;
+        height = 500;
         setPreferredSize(new Dimension(width, height));
         speed = 1;
         int delay = 1;
@@ -47,7 +47,6 @@ public class ClockPicturePanel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         g.clearRect(0, 0, width * 2, height * 2);
-
 
         double radAngle = Math.toRadians(angle);
         if (image != null) {
