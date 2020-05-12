@@ -17,7 +17,7 @@ public class BarleyBreak extends JPanel {
     private JPanel gamePanel;
     private GraphicalPanel fullImagePanel;
 
-    private static String filepath = "src/lena.jpg";
+    private static String filepath = "src/1-89.jpg";
 
     private static JButton newGameButton;
     private static JButton chooseImageButton;

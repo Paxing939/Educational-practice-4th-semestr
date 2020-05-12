@@ -64,11 +64,6 @@ public class CustomMouseListener extends MouseAdapter {
             }
         }
         if (found) {
-            for (int i = 0; i < BarleyBreak.getBrickRows(); i++) {
-                for (int j = 0; j < BarleyBreak.getBrickColumns(); j++) {
-                    System.out.println(BarleyBreak.getIndices()[i][j]);
-                }
-            }
             Point point = whereToMove(row, column);
             if (point != null) {
                 BarleyBreak.getPanels()[point.x][point.y].setImage(BarleyBreak.getPanels()[row][column].getImage());
