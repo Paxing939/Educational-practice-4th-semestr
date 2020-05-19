@@ -107,7 +107,7 @@ public class Application extends JFrame {
 
     public Application() throws HeadlessException, IOException {
         centralizeWindow(Application.WIDTH, Application.HEIGHT);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setResizable(false);
         setTitle("Arkanoid");
         setLayout(new BorderLayout());

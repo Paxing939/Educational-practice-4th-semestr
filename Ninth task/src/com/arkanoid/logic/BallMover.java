@@ -48,6 +48,7 @@ class BallMover implements ActionListener {
                     Gameplay.setGameOver(true);
                     gameplay.setVisible(false);
                     gameplay.getApplication().dispose();
+                    System.exit(0);
                 }
             } else if (new Rectangle((int) gameplay.getPlatform().getCenter().getX() - gameplay.getPLATFORM_WIDTH() / 2,
                     (int) gameplay.getPlatform().getCenter().getY() - gameplay.getPLATFORM_HEIGHT() / 2,
@@ -70,6 +71,7 @@ class BallMover implements ActionListener {
                             Gameplay.setGameOver(true);
                             gameplay.setVisible(false);
                             gameplay.getApplication().dispose();
+                            System.exit(0);
                         }
                     }
                 }

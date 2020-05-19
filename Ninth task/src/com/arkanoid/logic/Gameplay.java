@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Gameplay extends JPanel {
-    enum BlockColors {MAGENTA, RED, YELLOW, BLUE, GREEN, ORANGE, CYAN, GRAY, DARK_GRAY, LIGHT_GRAY, PINK, WHITE}
+    enum BlockColors {MAGENTA, RED, YELLOW, BLUE, GREEN, ORANGE, CYAN, GRAY, DARK_GRAY, LIGHT_GRAY, PINK}
 
     private int platformSpeed;
     private int ballX;
@@ -75,7 +75,7 @@ public class Gameplay extends JPanel {
         if (counter != BRICKS_AMOUNT) {
             int choice = JOptionPane.showConfirmDialog(this,
                     "Current game will be lost. Continue?",
-                    "Окно подтверждения",
+                    "Window of approval",
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.WARNING_MESSAGE);
             if (choice == 1) {
@@ -96,6 +96,7 @@ public class Gameplay extends JPanel {
                 break;
             }
         }
+        activeBlocks = BRICKS_AMOUNT;
         isFirstTime = true;
         blockList.clear();
     }
