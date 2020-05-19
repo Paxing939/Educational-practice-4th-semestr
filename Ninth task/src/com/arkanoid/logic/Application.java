@@ -11,17 +11,47 @@ public class Application extends JFrame {
     public static int WIDTH = 750;
     public static int HEIGHT = 600;
 
-    private final JMenuItem menuItem;
+    private final JMenuItem difficultyMenuItem;
+    private final JMenuItem anotherDifficultyMenuItem;
     private final JDialog difficultyDialog;
+    private final JDialog anotherDifficultyDialog;
     private final Image image;
+    private final Image difficultyImage;
     private final Font panelFont;
     private final int fontSize = 25;
     private final JButton amateur;
     private final JButton middle;
     private final JButton professional;
     private final JButton psycho;
+    private final JButton small;
+    private final JButton average;
+    private final JButton big;
     private final SoundPlayer soundPlayer;
     private final Gameplay gameplay;
+
+    public JDialog getAnotherDifficultyDialog() {
+        return anotherDifficultyDialog;
+    }
+
+    public JMenuItem getAnotherDifficultyMenuItem() {
+        return anotherDifficultyMenuItem;
+    }
+
+    public JButton getSmall() {
+        return small;
+    }
+
+    public JButton getAverage() {
+        return average;
+    }
+
+    public JButton getBig() {
+        return big;
+    }
+
+    Image getDifficultyImage() {
+        return difficultyImage;
+    }
 
     Image getImage() {
         return image;
@@ -35,8 +65,8 @@ public class Application extends JFrame {
         return fontSize;
     }
 
-    JMenuItem getMenuItem() {
-        return menuItem;
+    JMenuItem getDifficultyMenuItem() {
+        return difficultyMenuItem;
     }
 
     JDialog getDifficultyDialog() {
@@ -88,6 +118,7 @@ public class Application extends JFrame {
 
         JPanel panelsPanel = new JPanel();
         soundPlayer = new SoundPlayer();
+        difficultyImage = ImageIO.read(new File("src/com/arkanoid/images/difficultyImage.jpg"));
         image = ImageIO.read(new File("src/com/arkanoid/images/arcanoid.jpg"));
         panelFont = new Font("Bubble Pixel-7 Dark", Font.BOLD, fontSize);
 
@@ -97,11 +128,47 @@ public class Application extends JFrame {
 
         JMenu menu = new JMenu("Settings...");
         JMenuBar menuBar = new JMenuBar();
-        menuItem = new JMenuItem("Select Difficulty Level");
+        difficultyMenuItem = new JMenuItem("Select Difficulty Level");
+        anotherDifficultyMenuItem = new JMenuItem("Select Another Difficulty");
         ButtonListener buttonListener = new ButtonListener(this);
-        menuItem.addActionListener(buttonListener);
-        menu.add(menuItem);
+        difficultyMenuItem.addActionListener(buttonListener);
+        anotherDifficultyMenuItem.addActionListener(buttonListener);
+        menu.add(anotherDifficultyMenuItem);
+        menu.add(difficultyMenuItem);
         menuBar.add(menu);
+
+        anotherDifficultyDialog = new JDialog();
+        anotherDifficultyDialog.setTitle("Chose difficulty");
+        anotherDifficultyDialog.setResizable(false);
+        anotherDifficultyDialog.setBounds(getBounds());
+        anotherDifficultyDialog.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
+
+        AnotherDifficultyDialogPanel anotherDifficultyDialogPanel = new AnotherDifficultyDialogPanel(new BorderLayout(), this);
+        anotherDifficultyDialog.add(anotherDifficultyDialogPanel);
+        anotherDifficultyDialog.setBounds(getX() + (Application.WIDTH - image.getWidth(null)) / 2, getY(),
+                image.getWidth(null), image.getHeight(null));
+
+        small = new JButton(PlayerInfo.difficulty[0]);
+        average = new JButton(PlayerInfo.difficulty[1]);
+        big = new JButton(PlayerInfo.difficulty[2]);
+        anotherDifficultyDialogPanel.setLayout(null);
+        small.setFont(panelFont);
+        average.setFont(panelFont);
+        big.setFont(panelFont);
+
+        int location = getWidth() / 2 - 300;
+
+        small.setBounds(location, 250, 400, 50);
+        average.setBounds(location, 350, 400, 50);
+        big.setBounds(location, 450, 400, 50);
+
+        small.addActionListener(buttonListener);
+        average.addActionListener(buttonListener);
+        big.addActionListener(buttonListener);
+
+        anotherDifficultyDialogPanel.add(small);
+        anotherDifficultyDialogPanel.add(average);
+        anotherDifficultyDialogPanel.add(big);
 
         difficultyDialog = new JDialog();
         difficultyDialog.setTitle("Chose difficulty");
@@ -109,8 +176,8 @@ public class Application extends JFrame {
         difficultyDialog.setBounds(getBounds());
         difficultyDialog.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
 
-        DialogPanel dialogPanel = new DialogPanel(new BorderLayout(), true, this);
-        difficultyDialog.add(dialogPanel);
+        DifficultyDialogPanel difficultyDialogPanel = new DifficultyDialogPanel(new BorderLayout(), this);
+        difficultyDialog.add(difficultyDialogPanel);
         difficultyDialog.setBounds(getX() + (Application.WIDTH - image.getWidth(null)) / 2, getY(),
                 image.getWidth(null), image.getHeight(null));
 
@@ -118,19 +185,17 @@ public class Application extends JFrame {
         middle = new JButton(PlayerInfo.levels[1]);
         professional = new JButton(PlayerInfo.levels[2]);
         psycho = new JButton(PlayerInfo.levels[3]);
-        dialogPanel.setLayout(null);
+        difficultyDialogPanel.setLayout(null);
 
         amateur.setFont(panelFont);
         middle.setFont(panelFont);
         professional.setFont(panelFont);
         psycho.setFont(panelFont);
 
-        dialogPanel.add(amateur);
-        dialogPanel.add(middle);
-        dialogPanel.add(professional);
-        dialogPanel.add(psycho);
-
-        int location = getWidth() / 2 - 300;
+        difficultyDialogPanel.add(amateur);
+        difficultyDialogPanel.add(middle);
+        difficultyDialogPanel.add(professional);
+        difficultyDialogPanel.add(psycho);
 
         amateur.setBounds(location, 250, 400, 50);
         middle.setBounds(location, 350, 400, 50);

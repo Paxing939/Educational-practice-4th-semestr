@@ -26,7 +26,6 @@ public class Gameplay extends JPanel {
     private int blockWidth = 0;
     private int blockHeight = 0;
     private int activeBlocks;
-    private int level = 0;
     private int hitPoints;
     private final int hitPointImageSize = 50;
     private final int COLUMNS = 10;
@@ -39,13 +38,12 @@ public class Gameplay extends JPanel {
     private final int DELTA_X = 5;
     private final int DELTA_Y = 5;
     private final int All_HIT_POINTS = 3;
-    private final int BRICKS_AMOUNT = 50;
+    private int BRICKS_AMOUNT = 60;
 
     private boolean isGameStarted = false;
     private boolean isFirstTime = true;
     private boolean isLeftPressed = false;
     private boolean isRightPressed = false;
-    private boolean isEnterPressed = false;
     private static boolean gameOver = false;
 
     private final Ball ball;
@@ -64,8 +62,43 @@ public class Gameplay extends JPanel {
     private Timer timer;
     private Rectangle ranges;
     private Image hitPointImage;
-    private SoundPlayer soundPlayer;
+    private final SoundPlayer soundPlayer;
     private Image hitPointEmptyImage;
+
+    public void setDifficulty(int difficulty) {
+        int counter = 0;
+        for (Block el : blockList) {
+            if (el.isBlockEnabled()) {
+                counter++;
+            }
+        }
+        if (counter != BRICKS_AMOUNT) {
+            int choice = JOptionPane.showConfirmDialog(this,
+                    "Current game will be lost. Continue?",
+                    "Окно подтверждения",
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.WARNING_MESSAGE);
+            if (choice == 1) {
+                return;
+            }
+        }
+        switch (difficulty) {
+            case 0: {
+                BRICKS_AMOUNT = 30;
+                break;
+            }
+            case 1: {
+                BRICKS_AMOUNT = 60;
+                break;
+            }
+            case 2: {
+                BRICKS_AMOUNT = 100;
+                break;
+            }
+        }
+        isFirstTime = true;
+        blockList.clear();
+    }
 
     public void setDelay(int delay) {
         this.delay = delay;
@@ -76,7 +109,6 @@ public class Gameplay extends JPanel {
     }
 
     public void setLevel(int level) {
-        this.level = level;
         setPlatformSpeed(PlayerInfo.platformSpeeds[level]);
         setDelay(PlayerInfo.delays[level]);
 

@@ -13,8 +13,10 @@ class ButtonListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource().equals(application.getMenuItem())) {
+        if (e.getSource().equals(application.getDifficultyMenuItem())) {
             application.getDifficultyDialog().setVisible(true);
+        } else if (e.getSource().equals(application.getAnotherDifficultyMenuItem())) {
+            application.getAnotherDifficultyDialog().setVisible(true);
         } else {
             int level = 0;
             application.getSoundPlayer().playSound(SoundPlayer.NAVIGATION_SOUND);
@@ -30,6 +32,17 @@ class ButtonListener implements ActionListener {
             application.getGameplay().setLevel(level);
             application.getDifficultyDialog().setVisible(false);
 
+            int difficulty = 1;
+            application.getSoundPlayer().playSound(SoundPlayer.NAVIGATION_SOUND);
+            if (e.getSource().equals(application.getSmall())) {
+                difficulty = 0;
+            } else if (e.getSource().equals(application.getAverage())) {
+                difficulty = 1;
+            } else if (e.getSource().equals(application.getBig())) {
+                difficulty = 2;
+            }
+            application.getGameplay().setDifficulty(difficulty);
+            application.getAnotherDifficultyDialog().setVisible(false);
         }
 
 
