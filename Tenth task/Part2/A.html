@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+	span{
+	 display: block;
+	}
+	name{
+	font-size: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	color: white;
+	text-align: center;
+	}
+	bigletters{
+	font-size: 150%;
+	color: orange;
+	text-align: center;
+	}
+	draw{
+		color: blue;
+	}
+	</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="main.html">Main</a>
+  <a href="A.html">A</a>
+  <a href="B.html">B</a>
+  <a href="C.html">C</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+<div id="main">
+  <table width="100%">
+	<tr bgcolor="brown">
+	 <td colspan="4"><name><h1><input value="Ваше имя"></h1></name></td>
+	</tr>
+	<tr bgcolor="grey">
+	 <td bgcolor="orange">Дата рождения<br><p><input value=""></p></td>
+	 <td colspan="3"></td>
+	</tr>
+	<tr>
+		<td><input type="file" value=""></td>
+		<td colspan="3">
+		<p><span><bigletters>Адрес </bigletters><input value=""></span></p>
+		<p><span><bigletters>Мой номер телефона </bigletters><input value=""></span></p>
+		<p><span><bigletters>Адрес электронной почты </bigletters><input value=""></span></p>
+		<p><span><bigletters>ЦЕЛИ</bigletters><br><textarea rows="20" cols="45" maxlength="150"></textarea></span></p>
+		<span><bigletters>Образование </bigletters><br>
+<select>
+  <option>БГУ</option>
+  <option>БГУИР</option>
+</select>
+<br>Дата начала:<br>
+<select>
+  <option>2011</option>
+  <option>2012</option>
+<option>2013</option>
+<option>2014</option>
+<option>2015</option>
+<option>2016</option>
+</select>
+<br>Дата завершения:<br>
+<select>
+  <option>2015</option>
+  <option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+</select></span>
+		<span><bigletters>Опыт работы </bigletters><br>
+<input type="radio" name="answer" value="a1">есть<br>
+<input type="radio" name="answer" value="a1">нет<br>
+<br> Дата окончания<br>
+<select>
+  <option>2015</option>
+  <option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+</select>
+</span>
+		<span><bigletters>Умения и навыки(список)</bigletters><br>
+		<textarea rows="20" cols="45" maxlength="150"></textarea></span>
+	</tr>
+  </table>
+<center>
+<span>
+ <button onclick="call()"><img src="data/ok.png" alt="ok"> OK</button>&nbsp;<button><img src="data/cancel.png" alt="cancel"> CANCEL</button></p>
+</span>
+
+<center>
+<p>2017 - 2017</p>
+<p>Рак Алексей</p>
+<p>e-mail: kventinel@gmail.com</p>   
+</center>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+<script src="func.js"></script>
+</body>
+</html> 
+
