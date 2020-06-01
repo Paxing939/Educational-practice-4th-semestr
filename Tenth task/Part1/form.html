@@ -21,26 +21,41 @@
 	draw{
 		color: blue;
 	}
+        div {
+            width: 640px;
+            height: 240px;
+            position: relative;
+        }
+
+   #layer1, #layer2, #layer3, #layer4 {
+    position: relative; /* Относительное позиционирование */
+   }
+   #layer1 { z-index: 2; }
+   #layer2 { z-index: 1; }
+   #layer3 { z-index: 3; }
+   #layer4 { z-index: 4; }
+#rectangle {
+    width: 220px;
+    height: 120px;
+    background: #4da1f7;
+    z-index: 1;
+}
 	</style>
  </head>
  <body>	
  </head>
  <body>
-  <table width="100%">
-	<tr bgcolor="brown">
-	 <td colspan="4"><name><h1><input value="Ваше имя"></h1></name></td>
-	</tr>
-	<tr bgcolor="grey">
-	 <td bgcolor="orange">Дата рождения<br><p><input value=""></p></td>
-	 <td colspan="3"></td>
-	</tr>
+<div id="rectangle"></div>
+  <table id="layer4" width="100%">
 	<tr>
 		<td><input type="file" value=""></td>
 		<td colspan="3">
+		<span><bigletters>Имя </bigletters><input value=""></span>
+		<span><bigletters>Фамилия </bigletters><input value=""></span>
 		<span><bigletters>Адрес </bigletters><input value=""></span>
 		<span><bigletters>Мой номер телефона </bigletters><input value=""></span>
 		<span><bigletters>Адрес электронной почты </bigletters><input value=""></span>
-		<span><bigletters>ЦЕЛИ</bigletters><br><textarea rows="20" cols="45" maxlength="150"></textarea></span>
+		<span><bigletters>Цели</bigletters><br><textarea rows="20" cols="45" maxlength="150"></textarea></span>
 		<span><bigletters>Образование </bigletters><br>
 <select>
   <option>БГУ</option>
@@ -48,32 +63,40 @@
 </select>
 <br>Дата начала:<br>
 <select>
-  <option>2011</option>
-  <option>2012</option>
-<option>2013</option>
-<option>2014</option>
-<option>2015</option>
 <option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
 </select>
 <br>Дата завершения:<br>
 <select>
-  <option>2015</option>
+  <option>2020</option>
+  <option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+</select></span>
+		<span><bigletters>Опыт работы </bigletters><br>
+<input type="radio" name="answer" value="a1">есть<br>
+<input type="radio" name="answer" value="a1">нет<br>
+<br> Дата начала<br>
+<select>
   <option>2016</option>
 <option>2017</option>
 <option>2018</option>
 <option>2019</option>
 <option>2020</option>
-</select></span>
-		<span><bigletters>Опыт работы </bigletters><br>
-<input type="radio" name="answer" value="a1">есть<br>
-<input type="radio" name="answer" value="a1">нет<br>
+</select>
 <br> Дата окончания<br>
 <select>
-  <option>2015</option>
   <option>2016</option>
 <option>2017</option>
 <option>2018</option>
 <option>2019</option>
+<option>2020</option>
+<option>2021</option>
 </select>
 </span>
 		<span><bigletters>Умения и навыки(список)</bigletters><br>

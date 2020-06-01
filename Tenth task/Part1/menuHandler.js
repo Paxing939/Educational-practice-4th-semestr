@@ -7,10 +7,10 @@ menuForm.onclick = function () {
     window.open("form.html", "form", "width=670,height=495");
 }
 
-menuMap.onclick = function () {
-    window.open("map.html", "map", "width=470,height=550");
+menuTable.onclick = function () {
+    window.open("table.html", "table", "width=1000,height=650");
 }
 
-menuTable.onclick = function () {
-    window.open("table.html", "table", "width=650,height=689");
+menuMap.onclick = function () {
+    window.open("map.html", "map", "width=590,height=345");
 }

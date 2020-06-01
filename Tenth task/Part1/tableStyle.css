@@ -8,12 +8,12 @@ th, td {
     padding: 5px;
 }
 thead tr td{
-    background-color: #ff1eb6;
+    background-color: #31e815;
 }
 tr:nth-child(2n) {
     background: #58a1ff; /* Цвет фона */
 }
 
 tr:nth-child(2n+1) {
-    background: #834ef0;
+    background: #e8cc15;
 }
