@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="9_th_Lab:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="631ff122-16d6-4e33-a4d6-a3f6acafebf8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../First task/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/9_th_Lab_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_th_Lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/9_th_Lab_jar/9_th_Lab.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/9_th_Lab_jar/session.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/9_th_Lab/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/9_th_Lab/splash/top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output_html_table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output_txt_file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_to_html.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_to_text.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/CustomErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/CustomSAXParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/FieldsNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/PatternChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/SessionData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/SessionDataNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/session/SessionNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/splash/top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/top.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eighth task/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eighth task/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eighth task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eighth task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/ObserverLabel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/ObserverLabel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/ObserverTextArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Eighth task/out/production/Eighth task/log/ObserverTextArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Computer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Drive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Drive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/HardDisk.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/HardDisk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Hardware.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Processor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Processor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/RAM.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/RAM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/META-INF/Forth task.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/ClockPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/ClockPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/ClockPicturePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/ClockPicturePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/ClockPictureWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/ClockPictureWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/Diagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/Diagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/out/production/Forth task/com/company/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/ammunition/Ammunition.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/ammunition/Ammunition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/ammunition/Helmet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/ammunition/Helmet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/ammunition/Jacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/ammunition/Jacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/app/ConsoleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/app/ConsoleApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/driver/Motorcyclist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/driver/Motorcyclist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/xml/XMLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Second task/out/production/Second task/com/company/xml/XMLParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/barleybreak/BarleyBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/barleybreak/BarleyBreak.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/barleybreak/CustomButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/barleybreak/CustomButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/barleybreak/CustomMouseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/barleybreak/CustomMouseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/specks/GraphicalPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/specks/GraphicalPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/specks/ImageResize.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/specks/ImageResize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/specks/Shuffler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/specks/Shuffler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/wordart/MiniWordArtPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/wordart/MiniWordArtPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/wordart/TextPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seventh task/out/production/Seventh task/com/wordart/TextPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sixth task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sixth task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/MyCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/MyCell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/View$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/View$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/WrongFormatException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sixth task/out/production/lab6/com/company/WrongFormatException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/Main.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="XSLT Stylesheet" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pa</find>
+      <find>parse</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1clLV2v548irSHmP11sp09tAA6x" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>XmlPathReference</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="xml.defaultSchemas" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.session" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Java Proj\Session_Class(Powered by XML)" />
+      <recent name="C:\Users\LENOVO\Java Proj\Session_Class(Powered by XML)\out\artifacts\9_th_Lab_jar" />
+      <recent name="C:\Users\LENOVO\Java Proj\Session_Class(Powered by XML)\src" />
+      <recent name="C:\Users\LENOVO\Java Proj\Session_Class(Powered by XML)\src\META-INF" />
+      <recent name="C:\Users\LENOVO\Java Proj\Session_Class(Powered by XML)\out\production\9_th_Lab\splash" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.session" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Java Proj\Session_Class(Powered by XML)" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.session.Main" />
+      <module name="9_th_Lab" />
+      <option name="VM_PARAMETERS" value="-splash:src\splash\top.gif --module-path C:\Users\Ilya\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.session.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="631ff122-16d6-4e33-a4d6-a3f6acafebf8" name="Default" comment="" />
+      <created>1513673012184</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513673012184</updated>
+      <workItem from="1591098254881" duration="120000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="761" y="275" key="#Project_Structure" timestamp="1591098271736">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="761" y="275" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1591098271736" />
+    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591098374136">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591098374136" />
+    <state x="988" y="442" key="FileChooserDialogImpl" timestamp="1591098329809">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="988" y="442" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591098329809" />
+    <state x="761" y="275" key="SettingsEditor" timestamp="1591098333363">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="761" y="275" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591098333363" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

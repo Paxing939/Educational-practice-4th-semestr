@@ -1,0 +1,9 @@
+
+        Session Results:
+        
+           [ Number = "0" || Surname = "Unknown" || Subject = "Unknown" || Mark = "0" ]
+        
+           [ Number = "0" || Surname = "Unknown" || Subject = "Unknown" || Mark = "0" ]
+        
+            Popular Subject is "Unknown" and Average Mark equals "5"
+    

@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="486af7a0-8d7d-43bc-8b37-d162af455d1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../First task/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Computer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Drive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Drive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/HardDisk.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/HardDisk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Hardware.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Processor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/Processor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/RAM.class" beforeDir="false" afterPath="$PROJECT_DIR$/../First task/out/production/First_task/com/company/RAM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Forth task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Forth task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ammunition/Ammunition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ammunition/Ammunition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/app/ConsoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/app/ConsoleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/ammunition/Ammunition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/ammunition/Ammunition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/ammunition/Helmet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/ammunition/Helmet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/ammunition/Jacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/ammunition/Jacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/app/ConsoleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/app/ConsoleApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/driver/Motorcyclist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/driver/Motorcyclist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Second task/com/company/xml/XMLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Second task/com/company/xml/XMLParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/ListTableWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Third task/out/production/Third task/com/company/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +51,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Third task" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -68,33 +97,40 @@
       <workItem from="1584195464346" duration="434000" />
       <workItem from="1584459240768" duration="584000" />
       <workItem from="1586260896292" duration="1512000" />
+      <workItem from="1591040413276" duration="2975000" />
+      <workItem from="1591071897111" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1583313016994">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="915" y="284" key="FileChooserDialogImpl" timestamp="1591042877813">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583313016994" />
-    <state width="1493" height="91" key="GridCell.Tab.0.bottom" timestamp="1586262319980">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="915" y="284" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591042877813" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1591048656142">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="91" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586262319980" />
-    <state width="1493" height="91" key="GridCell.Tab.0.center" timestamp="1586262319980">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591048656142" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1591048656142">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="91" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586262319980" />
-    <state width="1493" height="91" key="GridCell.Tab.0.left" timestamp="1586262319979">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591048656142" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1591048656142">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="91" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586262319979" />
-    <state width="1493" height="91" key="GridCell.Tab.0.right" timestamp="1586262319980">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591048656142" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1591048656142">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="91" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586262319980" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591048656142" />
     <state width="1493" height="409" key="GridCell.Tab.1.bottom" timestamp="1586261951371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -111,6 +147,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="409" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586261951371" />
+    <state x="1400" y="0" key="SettingsEditor" timestamp="1591042863899">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1400" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591042863899" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583782182494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
