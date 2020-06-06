@@ -1,9 +1,19 @@
 
         Session Results:
         
-           [ Number = "0" || Surname = "Unknown" || Subject = "Unknown" || Mark = "0" ]
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
         
-           [ Number = "0" || Surname = "Unknown" || Subject = "Unknown" || Mark = "0" ]
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
         
-            Popular Subject is "Unknown" and Average Mark equals "5"
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
+        
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
+        
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
+        
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
+        
+           [ Number = "931034" || Surname = "Tarantino" || Subject = "Cinematography" || Mark = "10" ]
+        
+            Popular Subject is "Physics" and Average Mark equals "6.857142857142857"
     

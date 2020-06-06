@@ -1,61 +1,61 @@
-									.background {
-			          						background-color: azure;
-											background-attachment: fixed;
-											background-image: url(Images/background.png);
-									}
+.background {
+			background-color: azure;
+		background-attachment: fixed;
+		background-image: url(Images/background.png);
+}
 
-									.styleSheet {
-											color: black;
-											font-size: 30pt;
-											font-family: Verdana, Geneva, Tahoma, sans-serif;
-											text-align: center;
-										
-									}
+.styleSheet {
+		color: black;
+		font-size: 30pt;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-align: center;
+	
+}
 
-									.navigation {
-											float: left;
-											font-size: 20pt;
-											font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-											justify-content: center;
-											margin: 20pt;
-										/* border: 2pt;
-											border-style: solid;
-											border-color: black; */
-								
-									}
+.navigation {
+		float: left;
+		font-size: 20pt;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		justify-content: center;
+		margin: 20pt;
+	/* border: 2pt;
+		border-style: solid;
+		border-color: black; */
 
-									.block1 {
-											border: 1pt;	
-											border-style: solid;
-											border-color:black;
-											padding: 10pt;
-											margin: 20pt;
-											align-content: center;
-											height: 40pt;
-									
-									}
+}
 
-									hr {
-										width: 90%;
-										align-content: center;
-									}
+.block1 {
+		border: 1pt;	
+		border-style: solid;
+		border-color:black;
+		padding: 10pt;
+		margin: 20pt;
+		align-content: center;
+		height: 40pt;
 
-									.banner {
-										float: left;
-										/* border: 1pt;
-										border-style: solid; 
-										border-color: rgb(0, 0, 0); */
-										height: auto;
-										width: auto; 
-										margin-right: 3%;
-										margin-left: 20pt;
-									}
+}
 
-									.TextMain {
-										font-size: 15pt;
-										font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-									}
+hr {
+	width: 90%;
+	align-content: center;
+}
 
-									.Bold {
-										font-weight: 700;
-									}
+.banner {
+	float: left;
+	/* border: 1pt;
+	border-style: solid; 
+	border-color: rgb(0, 0, 0); */
+	height: auto;
+	width: auto; 
+	margin-right: 3%;
+	margin-left: 20pt;
+}
+
+.TextMain {
+	font-size: 15pt;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.Bold {
+	font-weight: 700;
+}

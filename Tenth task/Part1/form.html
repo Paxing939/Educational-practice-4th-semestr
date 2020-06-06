@@ -7,23 +7,23 @@
 </head>
 <body>
 <div class="section" style="padding:20px">
-    <h2><span>Форма:</span></h2>
+    <h1><span>Форма:</span></h1>
     <form>
-        <input name="nickname" placeholder="Имя" type="text"/><br/>
-        <input name="email" placeholder="Email" type="email" required/><br/>
-        <textarea name="message" placeholder="Сообщение" required></textarea><br/>
-        <div><label for="country">Страна проживания</label>
+    	<div><label for="country">Страна проживания</label>
             <select id="country">
                 <option value="Россия">Россия</option>
                 <option value="Украина">Украина</option>
                 <option value="Беларусь">Беларусь</option>
-                <option value="Беларусь">Казахстан</option>
-                <option value="Беларусь">США</option>
+                <option value="Казахстан">Казахстан</option>
+                <option value="США">США</option>
             </select></br>
         </div>
+        <input type="file" name="f"><br/>
+        Введите свое имя <input name="nickname" placeholder="Имя" type="text" required/><br/>
+        Введите свою фамилию <input name="email" placeholder="Email" type="email" required/><br/>
+        Введите свое e-mail <textarea name="message" placeholder="Сообщение" required></textarea><br/>
         <input type="radio" name="type" value="a1" required>Не анонимно</input>
         <input type="radio" name="type" value="a2" required>Анонимно</input><br/>
-        <input type="file" name="f"><br/>
         <button type="submit"><img src="apply.png"/></button>
         <button type="reset"><img src="cancel.png"/></button>
     </form>
